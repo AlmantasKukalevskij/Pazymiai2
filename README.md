@@ -19,8 +19,10 @@ bei galiausiai paklausiama kokia strategija norima naudotis, bei koks yra failo 
 galima sugeneruoti mokinius ir jų pažymius į failą (kaip ir anksciau)
 
 - Struktūros ir Class palyginimas
+- 
 ![image](https://user-images.githubusercontent.com/92589309/170834433-d0e59a73-8c36-4542-9a40-8f477800c88f.png)
 
 - Class vectoriu strategija, sparta priklausomai nuo optimizavimo lygio
+- 
 ![image](https://user-images.githubusercontent.com/92589309/170834744-d1571193-2696-4823-931d-a34a90aa956c.png)
 
