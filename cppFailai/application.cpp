@@ -347,14 +347,14 @@ void application::MokiniuSortiravimasV2(vector<Mokinys>& kietekai, vector<Mokiny
     kietekai.erase(remove_if(kietekai.begin(), kietekai.end(), vargsiukas), kietekai.end());
     cout << "Mokiniai padalinti i dvi grupes per: " << durationDouble(hrClock::now() - sortStart).count() << " sek." << endl;
 }
-void MokiniuSortiravimasV2(list<Mokinys>& kietekai, list<Mokinys>& vargsai)
+void application::MokiniuSortiravimasV2(list<Mokinys>& kietekai, list<Mokinys>& vargsai)
 {
     auto sortStart = hrClock::now();
     copy_if(kietekai.begin(), kietekai.end(), back_inserter(vargsai), vargsiukas);
     kietekai.erase(remove_if(kietekai.begin(), kietekai.end(), vargsiukas), kietekai.end());
     cout << "Mokiniai padalinti i dvi grupes per: " << durationDouble(hrClock::now() - sortStart).count() << " sek." << endl;
 }
-void MokiniuSortiravimasV2(deque<Mokinys>& kietekai, deque<Mokinys>& vargsai)
+void application::MokiniuSortiravimasV2(deque<Mokinys>& kietekai, deque<Mokinys>& vargsai)
 {
     auto sortStart = hrClock::now();
     copy_if(kietekai.begin(), kietekai.end(), back_inserter(vargsai), vargsiukas);

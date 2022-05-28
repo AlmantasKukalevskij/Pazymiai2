@@ -1,5 +1,3 @@
-#pragma once
-
 #include "generavimas.h"
 
 Generatorius::Generatorius() : file_name("mokiniai.txt")
