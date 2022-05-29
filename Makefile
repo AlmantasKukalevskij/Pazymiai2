@@ -1,6 +1,6 @@
 main : main.o
-	g++ -o main v1.1.cpp *.o -O3
+	g++ -o main*.o -O3
 main.o :
-	g++ -c cppFailai/*.cpp -O3
+	g++ -c v1.5.cpp cppFailai/*.cpp -O3
 clean :
 	del main.exe *.o
