@@ -26,3 +26,4 @@ galima sugeneruoti mokinius ir jų pažymius į failą (kaip ir anksciau)
 
 ![image](https://user-images.githubusercontent.com/92589309/170834744-d1571193-2696-4823-931d-a34a90aa956c.png)
 
+- Mokinio klasei dadetas kopijavimo konstruktorius ir operatorius bei destruktorius
