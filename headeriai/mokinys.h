@@ -1,6 +1,7 @@
 #pragma once
 
 #include "tikrinimas.h"
+#include "zmogus.h"
 
 #include<fstream>
 #include<vector>
@@ -14,29 +15,31 @@ using std::string;
 using std::endl;
 using std::vector;
 
-class Mokinys : public tikrinimas
+class Mokinys : public zmogus
 {
-private:
-    string vardas, pavarde;
+public:
     vector<int> pazymiai;
     int egzaminas;
     double vidurkis = 0;
     double mediana = 0;
+    tikrinimas tinkamas;
+    
+    void f()
+    {
 
-    bool PazTikrinimas(int t);
+    };
 
 public:
-    void setFirstName(string name);
-    void setFirstName(std::istream& name);
-    void setLastName(string name);
-    void setLastName(std::istream & name);
+    Mokinys();
+    ~Mokinys();
+    Mokinys(const Mokinys& m);
+    Mokinys& operator = (const Mokinys& m);
+
     void setEgzaminas(int paz);
 
-    double getMediana();
-    double getVidurkis();
-    double getEgzaminas();
-    std::string getFirstName();
-    std::string getLastName();
+    double getMediana() const;
+    double getVidurkis() const;
+    double getEgzaminas() const;
 
     void rankinisPazIvedimas();
     void addPaz(int paz);
@@ -48,4 +51,5 @@ public:
 };
 
 bool lyginimas(Mokinys& a, Mokinys& b);
-bool vargsiukas(Mokinys &a);
+bool vargsiukas(Mokinys& a);
+

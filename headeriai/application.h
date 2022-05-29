@@ -21,11 +21,9 @@ private:
 	std::chrono::time_point<std::chrono::high_resolution_clock> programStart;
 	string file_name;
 
-	Mokinys mokiniai;
 	Generatorius generator;
 	Timer systemTimer;
 	Timer otherTimer;
-	
 
 	bool egzaminas;
 	bool pazymys;
@@ -74,3 +72,5 @@ private:
 	void runManualMode();
 	void runAutoMode();
 };
+
+
