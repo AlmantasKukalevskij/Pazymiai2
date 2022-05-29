@@ -26,10 +26,15 @@ private:
     bool PazTikrinimas(int t);
 
 public:
+    Mokinys();
+    ~Mokinys();
+    Mokinys(const Mokinys& m);
+    Mokinys& operator = (const Mokinys& m);
+
     void setFirstName(string name);
     void setFirstName(std::istream& name);
     void setLastName(string name);
-    void setLastName(std::istream & name);
+    void setLastName(std::istream& name);
     void setEgzaminas(int paz);
 
     double getMediana();
@@ -48,4 +53,4 @@ public:
 };
 
 bool lyginimas(Mokinys& a, Mokinys& b);
-bool vargsiukas(Mokinys &a);
+bool vargsiukas(Mokinys& a);

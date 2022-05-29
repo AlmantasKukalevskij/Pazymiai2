@@ -25,7 +25,7 @@ private:
 	Generatorius generator;
 	Timer systemTimer;
 	Timer otherTimer;
-	
+
 
 	bool egzaminas;
 	bool pazymys;
@@ -74,3 +74,4 @@ private:
 	void runManualMode();
 	void runAutoMode();
 };
+

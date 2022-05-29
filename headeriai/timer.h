@@ -22,3 +22,4 @@ public:
 	double returnTime();
 	double StopReturn();
 };
+

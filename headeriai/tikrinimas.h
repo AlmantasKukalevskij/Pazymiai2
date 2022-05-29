@@ -11,7 +11,7 @@ using std::endl;
 class tikrinimas
 {
 private:
-	
+
 public:
 	tikrinimas();
 	~tikrinimas();
@@ -21,6 +21,7 @@ protected:
 	int IntTikrinimas();
 	bool PazTikrinimas(int t);
 };
+
 
 
 
