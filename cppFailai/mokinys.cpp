@@ -117,3 +117,42 @@ bool vargsiukas(Mokinys& a)
         return true;
     return false;
 }
+Mokinys::Mokinys() : vidurkis(0), mediana(0)
+{
+
+}
+Mokinys::Mokinys(const Mokinys& m)
+{
+    this->vardas = m.vardas;
+    this->pavarde = m.pavarde;
+    this->pazymiai.reserve(m.pazymiai.size());
+    this->pazymiai.resize(m.pazymiai.size());
+    for (int i = 0; i < m.pazymiai.size(); i++)
+    {
+        this->pazymiai.at(i) = m.pazymiai[i];
+    }
+    this->egzaminas = m.egzaminas;
+    this->vidurkis = m.vidurkis;
+    this->mediana = m.mediana;
+}
+Mokinys& Mokinys::operator=(const Mokinys& m)
+{
+    if (&m == this)
+        return *this;
+    vardas = m.vardas;
+    pavarde = m.pavarde;
+    this->pazymiai.reserve(m.pazymiai.size());
+    this->pazymiai.resize(m.pazymiai.size());
+    for (int i = 0; i < m.pazymiai.size(); i++)
+    {
+        pazymiai[i] = m.pazymiai[i];
+    }
+    vidurkis = m.vidurkis;
+    mediana = m.mediana;
+    egzaminas = m.egzaminas;
+    return *this;
+}
+Mokinys::~Mokinys()
+{
+    pazymiai.clear();
+}

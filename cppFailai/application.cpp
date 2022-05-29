@@ -21,7 +21,7 @@ void application::run()
         fileGen.set_file_name(writeFileName());
         cout << "Kiek sugeneruoti mokiniu?" << endl;
         fileGen.set_mok_count(IntTikrinimas());
-        cout << "Kiek sugeneruoti namu darbu?" << endl; 
+        cout << "Kiek sugeneruoti namu darbu?" << endl;
         fileGen.set_nd_count(IntTikrinimas());
         fileGen.failoGen();
         return;
@@ -267,7 +267,7 @@ void application::contToFile(string file_name, vector<Mokinys>& data)
         isvestis << std::left << std::setw(20) << mok.getMediana();
         isvestis << endl;
     }
-    
+
     std::ofstream file_out(file_name);
     file_out << isvestis.rdbuf();
     file_out.close();
@@ -440,7 +440,7 @@ void application::runAutoMode()
         contToFile("vargsai.txt", vargsai);
         cout << "Isrusiuoti mokinius i atskirus failus uztruko: " << otherTimer.StopReturn() << endl;
     }
-    else if(contTipas == 2)
+    else if (contTipas == 2)
     {
         list<Mokinys> mokiniai;
         list<Mokinys> vargsai;
